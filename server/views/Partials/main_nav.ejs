@@ -1,0 +1,34 @@
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand">
+      <img src="/Assets/images/Draw (1).png" alt="image">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item">
+          <% if(title=="Home") { %>
+            <a class="nav-link active" href="/home" style="font-weight: bold; color: rgb(73, 168, 231);">
+          <% } else {%>
+            <a class="nav-link" href="/home" style="font-weight: bold; color: rgb(21, 48, 128);">
+          <% } %>  
+          <i class="fa-solid fa-house-chimney-user"></i> Home</a>
+        </li>
+        
+        
+        <li class="nav-item">
+          <% if(title=="HealthList") { %>
+            <a class="nav-link active" href="/healthlist" style="font-weight: bold; color: rgb(73, 168, 231);">
+          <% } else {%>
+            <a class="nav-link" href="/healthlist" style="font-weight: bold; color: rgb(21, 48, 128);">
+          <% } %>  
+          <i class="fa-duotone fa-solid fa-suitcase-medical"></i> Health</a>
+        </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>

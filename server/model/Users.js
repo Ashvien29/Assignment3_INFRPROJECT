@@ -1,5 +1,6 @@
 let mongoose = require('mongoose');
 let passportLocalMongoose = require('passport-local-mongoose');
+/*Updating username and password*/
 let User = mongoose.Schema({
     username:
     {

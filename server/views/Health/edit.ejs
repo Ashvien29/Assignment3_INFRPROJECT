@@ -6,6 +6,7 @@
         <div class="offset-md-3 col-md-6">
             <h1><%= title %></h1>
             <form class="form" method="POST">
+            <!--My division class form group for each label and input-->
                 <div class="form-group">
                     <label for="DayTextField">Day</label>
                     <input type="text" class="form-control" id="DayTextField" placeholder="Enter the day" name="Day" value="<%= Book.Day %>" required>
@@ -22,9 +23,10 @@
                     <label for="BloodSugarTextField">Blood Sugar</label>
                     <input type="text" class="form-control" id="BloodSugarTextField"  placeholder="Enter your blood sugar level" name="BloodSugar" value="<%= Book.BloodSugar %>" required>
                 </div>
+                <!--Button class for submit-->
                 <button class="btn btn-primary" type="submit">Submit
                 <i class="fas fa-edit"></i></button>  
-                
+                <!--Cancel button class and link to go back to the health list page-->
                 <a href="/healthlist" class="btn btn-warning"> 
                     <i class="fas fa-undo"></i> Cancel
                 </a>  
